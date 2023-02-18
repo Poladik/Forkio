@@ -35,7 +35,7 @@ function styles() {
 }
 function img() {
   src("./dist/img/*").pipe(clean());
-  return src("./src/img/*.*")
+  return src("./src/img/**/*.*")
     .pipe(imgMin())
     .pipe(dest("./dist/img/"))
     .pipe(bsServer.reload({ stream: true }));
