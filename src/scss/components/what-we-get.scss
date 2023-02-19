@@ -1,0 +1,45 @@
+.what-u-get {
+  padding-top: 100px;
+  padding-bottom: 40px;
+
+  background: #f4f4f4;
+//   display: flex;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+
+  &__image {
+    &__title {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 50px;
+      color: #8d81ac;
+    }
+    &__img{
+        width: 100%;
+    }
+  }
+}
+
+.services {
+    // max-width: 550px;
+      padding-left: 90px;
+  &-item {
+    display: flex;
+    gap: 25px;
+    &__content {
+        text-align: start;
+      &__title {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #323232;
+      }
+      &__subtitle {
+        font-size: 14px;
+        line-height: 21px;
+        color: #848e97;
+      }
+    }
+  }
+}

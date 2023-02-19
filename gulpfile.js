@@ -42,9 +42,9 @@ function img() {
 }
 
 function watcher() {
-  watch("./src/scss/*.scss", styles);
+  watch("./src/scss/**/*.scss", styles);
   watch("./src/js/*.js", scripts);
-  watch("./src/img/**.*", img);
+  watch("./src/img/**/*.*", img);
   watch("./index.html").on("change", bsServer.reload);
 }
 
