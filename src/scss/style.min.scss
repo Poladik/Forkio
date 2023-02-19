@@ -1,4 +1,6 @@
 @import "./vars";
 @import "./mixins";
 @import "./normalize";
-@import "./global";
+@import "./global.scss";
+@import "./components/rev-editor.scss";
+@import "./components/what-we-get.scss";
