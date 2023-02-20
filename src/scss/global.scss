@@ -1,15 +1,13 @@
 body {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-  text-align: center;
+  font-family: $main-font;
 }
-
 .container {
-   max-width: 1200px;
-   margin-left: auto;
-   margin-right: auto;
+  width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-//   @include flexcenter;
+  @media (min-width: $break-point-3) {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
