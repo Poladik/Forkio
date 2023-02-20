@@ -1,3 +1,8 @@
+//Fonts
+$main-font: "Montserrat";
+$secondary-font: "lato";
+
+
 //Кольори шрифтів хедеру 
 $hdr-nav-bg-color: #27262A; 
 $hdr-nav-txt-hover-color: #FFFFFF; 
@@ -9,3 +14,8 @@ $hdr-subtext-color: #848E97;
 //Кольори шрифтів People Are Talking About Fork 
 $plp-cards-text-color: #FFFFFF; 
 $plp-text-color: #A291A5; 
+
+//breackpoints
+$break-point-1: 480px;
+$break-point-2: 992px;
+$break-point-3: 1200px;
