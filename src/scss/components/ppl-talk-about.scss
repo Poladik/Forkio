@@ -35,10 +35,12 @@
   @media (min-width: $break-point-1) {
     margin-top: 85px;
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 60px;
     column-gap: 7.8125%; /* 60/768 */
   }
   @media (min-width: $break-point-2) {
     grid-template-columns: repeat(3, 1fr);
+    row-gap: 110px;
     column-gap: 7.5%; /* 90/1200 */
   }
 }
