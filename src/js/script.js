@@ -5,9 +5,9 @@ const menu = document.querySelector(".main-header__menu");
 
 menuButton.addEventListener("click", (e) => {
   let target = e.target.closest("button");
-  for (const svg of target.children) {
-    svg.classList.toggle("main-header__btn-svg--hidden");
-  }
+  target.children[0].classList.toggle("main-header__menu-button-line-1--hidden");
+  target.children[1].classList.toggle("main-header__menu-button-line-2--anim");
+  target.children[2].classList.toggle("main-header__menu-button-line-3--anim");
   menu.classList.toggle("main-header__menu--open");
 });
 
@@ -18,9 +18,6 @@ document.addEventListener("click", (e) => {
     !(target.closest("button") === menuButton) &&
     menu.classList.contains("main-header__menu--open")
   ) {
-    for (const svg of menuButton.children) {
-      svg.classList.toggle("main-header__btn-svg--hidden");
-    }
-    menu.classList.remove("main-header__menu--open");
+    menuButton.click();
   }
 });
