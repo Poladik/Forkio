@@ -1,6 +1,7 @@
 .rev-editor {
   padding-top: 130px;
   padding-bottom: 40px;
+  min-width: 320px;
   @media (max-width: $break-point-1) {
     padding-bottom: 0;
   }

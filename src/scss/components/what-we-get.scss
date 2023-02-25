@@ -2,7 +2,7 @@
   padding-top: 94px;
   padding-bottom: 40px;
   background: #f4f4f4;
-
+  min-width: 320px;
   display: flex;
   position: relative;
   gap: 50px;
@@ -21,7 +21,7 @@
     width: 100%;
     &__title {
       font-weight: 700;
-      font-size: 48px;
+      font-size: 39px;
       line-height: 50px;
       color: #8d81ac;
       margin-top: 0;
@@ -33,6 +33,7 @@
         font-size: 32px;
         line-height: 38px;
         margin-bottom: 36px;
+        position: relative;
       }
     }
     &__wrap {
@@ -41,6 +42,7 @@
       @media (max-width: $break-point-2) {
         position: absolute;
         bottom: 0;
+        right: 0;
       }
       @media (max-width: $break-point-1) {
       }
@@ -56,6 +58,7 @@
         @media (max-width: $break-point-2) {
           width: 91.14583333333334vw;
           bottom: 0;
+          right: 10px;
         }
         @media (max-width: $break-point-1) {
           width: 93.75vw;
