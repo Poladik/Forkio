@@ -50,7 +50,8 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 24px;
-  @include flex-center;
+  display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: flex-end;
   gap: 30px;
