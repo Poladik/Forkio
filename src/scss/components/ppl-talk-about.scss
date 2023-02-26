@@ -5,6 +5,7 @@
   background-size: cover;
   padding-top: 60px;
   padding-bottom: 50px;
+  min-width: 320px;
   @media (min-width: $break-point-1) {
     padding-top: 85px;
   }
