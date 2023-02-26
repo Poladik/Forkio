@@ -1,5 +1,4 @@
 .fork {
-  // font-family: Monse;
   padding-top: 83px;
   padding-bottom: 97px;
   background-image: url(/dist/img/fork/fork-bg.png);
@@ -42,9 +41,8 @@
     @media (max-width: $break-point-1) {
       display: flex;
       flex-direction: column;
-      // grid-template-columns: repeat(1, 1fr);
     }
-    & :nth-child(3){
+    & :nth-child(3) {
       @media (max-width: $break-point-1) {
         margin-bottom: 30px;
       }
@@ -139,9 +137,6 @@
 
     &--active {
       margin-top: 14px;
-    }
-
-    &--active {
       font-size: 82px;
       line-height: 90px;
     }
@@ -173,9 +168,9 @@
     text-align: center;
     max-width: 65%;
     @media (max-width: $break-point-1) {
-     max-width: 90%;
+      max-width: 90%;
     }
-    &--wrap{
+    &--wrap {
       max-width: 100%;
     }
   }
