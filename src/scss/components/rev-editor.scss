@@ -17,7 +17,6 @@
       line-height: 42px;
     }
     @media (max-width: $break-point-1) {
-      text-align: center;
       font-size: 26px;
       line-height: 28px;
       padding-bottom: 0;
@@ -48,21 +47,19 @@
     flex-wrap: wrap;
   }
   &__btns {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     border: 1px solid #f4f4f4;
     border-radius: 3px;
-    &__text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 5px;
-      background: #f4f4f4;
-      padding: 5px 15px;
-    }
-    &__count {
-      padding: 5px 13px;
-    }
+  }
+  &__text {
+    @include flex-center;
+    gap: 5px;
+    background: #f4f4f4;
+    padding: 5px 15px;
+    color: #323232;
+    cursor: pointer;
+  }
+  &__count {
+    padding: 5px 13px;
   }
 }
