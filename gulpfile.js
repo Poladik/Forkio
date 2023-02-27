@@ -35,16 +35,16 @@ function styles() {
 }
 function img() {
   src("./dist/img/*").pipe(clean());
-  return src("./src/img/*.*")
+  return src("./src/img/**/*.*")
     .pipe(imgMin())
     .pipe(dest("./dist/img/"))
     .pipe(bsServer.reload({ stream: true }));
 }
 
 function watcher() {
-  watch("./src/scss/*.scss", styles);
+  watch("./src/scss/**/*.scss", styles);
   watch("./src/js/*.js", scripts);
-  watch("./src/img/**.*", img);
+  watch("./src/img/**/*.*", img);
   watch("./index.html").on("change", bsServer.reload);
 }
 
