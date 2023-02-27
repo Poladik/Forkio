@@ -48,6 +48,7 @@
       line-height: 38px;
       margin-bottom: 36px;
       position: relative;
+      // white-space: normal;
     }
   }
   &__wrap {
@@ -58,8 +59,7 @@
       bottom: 0;
       right: 0;
     }
-    @media (max-width: $break-point-1) {
-    }
+   
   }
   &__img {
     position: absolute;
@@ -75,6 +75,7 @@
       right: 10px;
     }
     @media (max-width: $break-point-1) {
+//  min-width: 320px;
       width: 93.75vw;
       right: 10px;
     }
