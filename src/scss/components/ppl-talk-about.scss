@@ -1,5 +1,5 @@
 .ppl-talk-about {
-  background-image: url(/dist/img/aboutFork/about-fork-bckgrnd.jpg);
+  background-image: url(../img/aboutFork/about-fork-bckgrnd.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,12 +14,8 @@
   }
 }
 .ppl-talk-about__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 48px;
+  @include bottom-title(0);
   color: $ppl-cards-title-color;
-  text-align: center;
-  margin: 0;
   @media (min-width: $break-point-1) {
     font-size: 42px;
     line-height: 44px;
